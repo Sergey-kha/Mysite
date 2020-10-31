@@ -42,4 +42,4 @@ class ChoiceDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = ChoiceSerializer
 
     def get_object(self):
-        return get_object_or_404(Question, pk=self.kwargs.get('question_id'))
+        return get_object_or_404(Choice, pk=self.kwargs.get('question_id'))
